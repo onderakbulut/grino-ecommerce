@@ -1,0 +1,255 @@
+/* nav tabs start */
+$nav-tabs-border-radius : 4px;
+$nav-tabs-border-color: #E9E9E9;
+
+$enable-negative-margins: true;
+$link-decoration: unset;
+$enable-cssgrid: true !default;
+
+$form-select-indicator: url("data:image/svg+xml,%3Csvg id='Normal' xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg id='Chevron' transform='translate(2 5)'%3E%3Cpath id='Line' d='M0,0,6,6' fill='none' stroke='%23040e3f' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2'/%3E%3Cpath id='Line-2' data-name='Line' d='M0,0,6-6' transform='translate(6 6)' fill='none' stroke='%23040e3f' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
+$form-select-bg-size: 16px 16px;
+
+$offcanvas-backdrop-bg: rgb(18 18 18 / 50%);
+$offcanvas-backdrop-opacity: 1;
+$input-border-radius: 4px;
+$input-border-color:#D5D5D5;
+
+
+$zindex-levels: (
+  n1: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  1045: 1045,
+  1050: 1050,
+  1055: 1055,
+  ) !default;
+
+$primary :#131339;
+$enable-shadows: true;
+$nav-link-color: $primary;
+$nav-link-hover-color: #0a0a20;
+$link-color: $primary;
+
+$box-shadow-lg: 0 2px 5px 0 rgba(0, 0, 0, 0.05
+);
+$link-decoration: unset;
+$link-hover-decoration: unset;
+
+$enable-negative-margins: true;
+$headings-font-family: 'Poppins', sans-serif;
+$font-family-base: 'Open Sans', sans-serif;
+$dropdown-border-radius: 4px;
+$dropdown-border-width: 0;
+$dropdown-box-shadow: $box-shadow-lg;
+$dropdown-item-padding-x: 24px;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+// Add a custom color to $theme-colors
+$custom-colors: (
+  "accent": #040e3f,
+  "teal": #78a1bb,
+  "red": #f46036,
+  "yellow": #f5be18,
+  "green": #4bda88,
+  "gray-20": #333333,
+  "codgray": #121212,
+  "gray": #808080,
+  "mercury": #E9E9E9,
+  "mercury-50": #E2E2E2,
+  "alto": #D5D5D5,
+  "rhino": #353E6D,
+  "alabaster": #F8F8F8,
+  "alabaster-50": #FAFAFA,
+
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$custom-position: (
+  16: 16px,
+ 
+);
+
+$position-values: map-merge($position-values, $custom-position);
+
+
+/* pagination */
+$pagination-font-size: 14px;
+$pagination-color: map-get($custom-colors, "teal");
+$pagination-border-width: 0;
+$pagination-active-bg: map-get($custom-colors, "teal");
+$pagination-border-radius: 50%;
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1352px
+);
+
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  5px: 5px,
+  42: 42px,
+  43: 43px,
+  45: 45px,
+  48: 48px,
+  50: 50px,
+  63: 63px,
+  64: 64px,
+  70: 70px,
+  77: 77px,
+  80: 80px,
+  90: 90px,
+  100: 100px,
+  116: 116px,
+  126: 126px,
+  160: 160px,
+  171: 171px,
+  200: 200px,
+  222: 222px,
+  300: 300px,
+);
+
+@for $i from 6 through 40 {
+  $spacers: map-merge($spacers,
+    ($i: ($i+px,
+      ),
+    ));
+}
+
+$font-sizes: (
+    1: 2.5rem,
+    2: 2rem,
+    3: 1.5rem,
+    4: 1.25rem,
+    5: 1.125rem,
+    6: 1rem,
+    38: 38px,
+    40: 40px,
+    54: 54px,
+    56: 56px,
+);
+@for $i from 7 through 40 {
+  $font-sizes: map-merge($font-sizes,
+    ($i: ($i+px,
+      ),
+    ));
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// custom buttons */
+.btn-alabaster {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #131339;
+  --bs-btn-bg: #F8F8F8;
+  --bs-btn-border-color: #F8F8F8;
+  --bs-btn-hover-color: #FFFFFF;
+  --bs-btn-hover-bg: #78A1BB;
+  --bs-btn-hover-border-color:#78A1BB;
+  --bs-btn-focus-shadow-rgb:#545455;
+  --bs-btn-active-color:#FFFFFF;
+  --bs-btn-active-bg: #78A1BB;
+  --bs-btn-active-border-color: #78A1BB;
+  &.active {
+    --bs-btn-bg: #78A1BB;
+  }
+}
+
+.btn-filter {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #131339;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: #D5D5D5;
+  --bs-btn-hover-color: #131339;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color:#D5D5D5;
+  --bs-btn-focus-shadow-rgb:#545455;
+  --bs-btn-active-color:#FFFFFF;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: #D5D5D5;
+  &.active {
+    --bs-btn-border-color: #78A1BB;
+    --bs-btn-active-border-color: #78A1BB;
+    --bs-btn-active-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  }
+}
+
+
+
+$utilities: map-merge($utilities,
+    ("shadow": map-merge(map-get($utilities, "shadow"),
+        (values: map-merge(map-get(map-get($utilities, "shadow"), "values"),
+            (sm: 0 2px 5px 0 rgba(0, 0, 0, 0.05),
+              md: 0 1px 10px 0 rgba(0, 0, 0, 0.07),
+              nav: 0px 2px 8px rgba(0, 0, 0, 0.07),
+              testi: 0px 1px 10px rgba(0, 0, 0, 0.07),
+              btn: 0px 7px 10px rgba(0, 0, 0, 0.03),
+              acc: 0px 5px 17px rgba(0, 0, 0, 0.07),
+              lg: 0 3px 10px 0 rgba(129, 129, 129, .2)),
+          ),
+        ),
+      ),
+      "rounded": map-merge(map-get($utilities, "rounded"),
+        (values: map-merge(map-get(map-get($utilities, "rounded"), "values"),
+            (2px: 2px,
+              5px: 5px,
+              6: 6px,
+              10: 10px,
+              100: 100px),
+          ),
+        ),
+      ),
+      "line-height": map-merge(map-get($utilities, "line-height"),
+        (values: map-merge(map-get(map-get($utilities, "line-height"), "values"),
+            (
+              28: 28px,
+            ),
+          ),
+          responsive: true
+        ),
+        
+      ),
+      "pointer-events": map-merge(map-get($utilities, "pointer-events"),
+        (responsive: true),
+      ),
+      "position": map-merge(map-get($utilities, "position"),
+        (responsive: true),
+      ),
+      "z-index": map-merge(map-get($utilities, "z-index"),
+        (responsive: true),
+      ),
+      "font-size": map-merge(map-get($utilities, "font-size"),
+        (
+          rfs: false,
+          responsive: true
+        ),
+      ),
+
+    ));
+
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+.btn-check:focus+.btn,
+.btn:focus,
+.form-control:focus,
+.form-check-input:focus,
+.form-select:focus,
+.page-link:focus,
+.btn-close:focus,
+.accordion-button:focus,
+.btn-link:focus-visible {
+  box-shadow: unset;
+}

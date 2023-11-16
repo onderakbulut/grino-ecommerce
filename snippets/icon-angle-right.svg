@@ -1,0 +1,6 @@
+<svg id="Normal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Chevron" transform="translate(6 2)">
+    <path id="Line" d="M0,0,6,6" transform="translate(0 12) rotate(-90)" fill="none" stroke="#040e3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Line-2" data-name="Line" d="M0,0,6-6" transform="translate(6 6) rotate(-90)" fill="none" stroke="#040e3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

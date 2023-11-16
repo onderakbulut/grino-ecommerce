@@ -1,0 +1,7 @@
+<svg id="Regular" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="_4._Icons_24px_Close_White_Regular_background" data-name="4. Icons / 24px / Close / White / Regular background" width="24" height="24" fill="none"/>
+  <g id="Chevron" transform="translate(3.614 3.5)">
+    <path id="Line" d="M0,.781,20.772.219" transform="translate(1.396 0.802) rotate(45)" fill="none" stroke="#fdfffc" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Line-2" data-name="Line" d="M0,.219,20.772.781" transform="translate(16.084 1.51) rotate(135)" fill="none" stroke="#fdfffc" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

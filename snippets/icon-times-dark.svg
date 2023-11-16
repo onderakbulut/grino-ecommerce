@@ -1,0 +1,7 @@
+<svg id="Dark" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <rect id="_4._Icons_16px_Close_Dark_background" data-name="4. Icons / 16px / Close / Dark background" width="16" height="16" fill="none"/>
+  <g id="Chevron" transform="translate(4 4)">
+    <path id="Line" d="M0,.64,10.386.36" transform="translate(0.875 0.474) rotate(45)" fill="none" stroke="#040e3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Line-2" data-name="Line" d="M0,.36,10.386.64" transform="translate(8.219 1.182) rotate(135)" fill="none" stroke="#040e3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
