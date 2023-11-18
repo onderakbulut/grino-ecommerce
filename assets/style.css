@@ -452,3 +452,45 @@
 }
 /* footer end */
 
+/* facets start */
+.btn-filter {
+    display: flex;
+    align-items: center;
+}
+.btn-filter > span {
+    display: block;
+    min-width: 84px;
+    text-align: left;
+}
+.facets .dropdown-menu.show {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(94px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 8px;
+}
+.facets .dropdown-menu .btn {
+    display: block;
+    width: 100%;
+}
+.dropdown-toggle::after {
+    border:0;
+    background-image: url("data:image/svg+xml,%3Csvg id='Normal' xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' class='icon-caret'%3E%3Cg id='Chevron' transform='translate(2 5)'%3E%3Cpath id='Line' d='M0,0,6,6' fill='currentColor' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2'/%3E%3Cpath id='Line-2' data-name='Line' d='M0,0,6-6' transform='translate(6 6)' fill='currentColor' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
+    width: 16px;
+    height: 16px;
+}
+/* facets end */
+
+/* product list start */
+.product-item {
+    position: relative;
+}
+.product-image {
+    overflow: hidden;
+}
+.product-image img {
+    transition: transform 0.5s ease 0s;
+}
+.product-item:hover .product-image img {
+    transform: scale(1.1);
+}
+/* product list end */
