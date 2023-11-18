@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- burger -->
+    <link rel="stylesheet" href="./assets/burger.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="./assets/swiper-bundle.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="./assets/animate.min.css">
+    <!-- nice-select2 -->
+    <link rel="stylesheet" href="./assets/nice-select2.css">
+    <!-- fancybox -->
+    <link rel="stylesheet" href="./assets/fancybox.css">
+    
+    <link rel="stylesheet" href="./assets/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+
+</head>
+
+<body>
+    <!-- mobile menu start -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-body position-relative overflow-x-hidden p-0 d-flex flex-column">
+            <div class="mobile-menu-inner">
+                <ul class="list-unstyled">
+                    <li class="active">
+                        <a href="#" class="d-flex align-items-center">
+                            <span class="me-2">New Arrivals</span>
+                        </a>
+                    </li>
+                    <li>
+                        <summary class="d-flex align-items-center">
+                            <span class="me-2">Shop</span>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="path-1-inside-1_355_2223" fill="white">
+                                    <path
+                                        d="M14.1525 10.661L7.79657 17.0169L6.90674 16.1271L12.3728 10.661L6.90674 5.19488L7.79657 4.30505L14.1525 10.661Z">
+                                    </path>
+                                </mask>
+                                <path
+                                    d="M14.1525 10.661L7.79657 17.0169L6.90674 16.1271L12.3728 10.661L6.90674 5.19488L7.79657 4.30505L14.1525 10.661Z"
+                                    fill="black"></path>
+                                <path
+                                    d="M14.1525 10.661L15.5667 12.0752L16.9809 10.661L15.5667 9.24677L14.1525 10.661ZM7.79657 17.0169L6.38235 18.4311L7.79657 19.8453L9.21078 18.4311L7.79657 17.0169ZM6.90674 16.1271L5.49252 14.7129L4.07831 16.1271L5.49252 17.5413L6.90674 16.1271ZM12.3728 10.661L13.7871 12.0752L15.2013 10.661L13.7871 9.24677L12.3728 10.661ZM6.90674 5.19488L5.49252 3.78067L4.07831 5.19488L5.49252 6.6091L6.90674 5.19488ZM7.79657 4.30505L9.21078 2.89084L7.79657 1.47663L6.38235 2.89084L7.79657 4.30505ZM12.7383 9.24677L6.38235 15.6027L9.21078 18.4311L15.5667 12.0752L12.7383 9.24677ZM9.21078 15.6027L8.32095 14.7129L5.49252 17.5413L6.38235 18.4311L9.21078 15.6027ZM8.32095 17.5413L13.7871 12.0752L10.9586 9.24677L5.49252 14.7129L8.32095 17.5413ZM13.7871 9.24677L8.32095 3.78067L5.49252 6.6091L10.9586 12.0752L13.7871 9.24677ZM8.32095 6.6091L9.21078 5.71927L6.38235 2.89084L5.49252 3.78067L8.32095 6.6091ZM6.38235 5.71927L12.7383 12.0752L15.5667 9.24677L9.21078 2.89084L6.38235 5.71927Z"
+                                    fill="black" mask="url(#path-1-inside-1_355_2223)"></path>
+                            </svg>
+                        </summary>
+                        <div class="submenu">
+                            <div class="submenu-inner">
+                                <button
+                                    class="close-menu bg-transparent border-0 d-flex align-items-center fw-bold text-dark">
+                                    <div class="me-2">
+                                        <svg class="align-text-top" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.50005 12L15 4.5L16.05 5.55L9.60005 12L16.05 18.45L15 19.5L7.50005 12Z" fill="black"/>
+                                        </svg>
+                                    </div>
+                                    <span>Shop</span>
+                                </button>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="/collections/kahve-demleme-ekipmanlari"
+                                            class="d-flex align-items-center">
+                                            <span class="me-2">3. Nesil Kahve Ekipmanları</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <summary class="d-flex align-items-center">
+                                            <span class="me-2">Clothes</span>
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="path-1-inside-1_355_2223" fill="currentColor">
+                                                    <path
+                                                        d="M14.1525 10.661L7.79657 17.0169L6.90674 16.1271L12.3728 10.661L6.90674 5.19488L7.79657 4.30505L14.1525 10.661Z">
+                                                    </path>
+                                                </mask>
+                                                <path
+                                                    d="M14.1525 10.661L7.79657 17.0169L6.90674 16.1271L12.3728 10.661L6.90674 5.19488L7.79657 4.30505L14.1525 10.661Z"
+                                                    fill="currentColor"></path>
+                                                <path
+                                                    d="M14.1525 10.661L15.5667 12.0752L16.9809 10.661L15.5667 9.24677L14.1525 10.661ZM7.79657 17.0169L6.38235 18.4311L7.79657 19.8453L9.21078 18.4311L7.79657 17.0169ZM6.90674 16.1271L5.49252 14.7129L4.07831 16.1271L5.49252 17.5413L6.90674 16.1271ZM12.3728 10.661L13.7871 12.0752L15.2013 10.661L13.7871 9.24677L12.3728 10.661ZM6.90674 5.19488L5.49252 3.78067L4.07831 5.19488L5.49252 6.6091L6.90674 5.19488ZM7.79657 4.30505L9.21078 2.89084L7.79657 1.47663L6.38235 2.89084L7.79657 4.30505ZM12.7383 9.24677L6.38235 15.6027L9.21078 18.4311L15.5667 12.0752L12.7383 9.24677ZM9.21078 15.6027L8.32095 14.7129L5.49252 17.5413L6.38235 18.4311L9.21078 15.6027ZM8.32095 17.5413L13.7871 12.0752L10.9586 9.24677L5.49252 14.7129L8.32095 17.5413ZM13.7871 9.24677L8.32095 3.78067L5.49252 6.6091L10.9586 12.0752L13.7871 9.24677ZM8.32095 6.6091L9.21078 5.71927L6.38235 2.89084L5.49252 3.78067L8.32095 6.6091ZM6.38235 5.71927L12.7383 12.0752L15.5667 9.24677L9.21078 2.89084L6.38235 5.71927Z"
+                                                    fill="currentColor" mask="url(#path-1-inside-1_355_2223)"></path>
+                                            </svg>
+                                        </summary>
+                                        <div class="submenu">
+                                            <div class="submenu-inner">
+                                                <button
+                                                    class="close-menu bg-transparent border-0 d-flex align-items-center fw-bold text-dark">
+                                                    <div class="me-2">
+                                                        <svg class="align-text-top" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M7.50005 12L15 4.5L16.05 5.55L9.60005 12L16.05 18.45L15 19.5L7.50005 12Z" fill="black"/>
+                                                        </svg>
+                                                    </div>
+                                                    <span>Clothes</span>
+                                                </button>
+                                                <ul class="list-unstyled">
+                                                    <li><a  href="" class="d-flex align-items-center">Tops</a></li>
+                                                    <li><a  href="" class="d-flex align-items-center">Bottoms</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="/collections/moka-pot"
+                                            class="d-flex align-items-center">
+                                            <span class="me-2">Moka Pot</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/collections/setler"
+                                            class="d-flex align-items-center">
+                                            <span class="me-2">Kahve Setleri</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/collections/filtre-kahve-makineleri"
+                                            class="d-flex align-items-center">
+                                            <span class="me-2">Filtre Kahve Makineleri</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://kahvebi.com/collections/otomatik-kahve-degirmeni"
+                                            class="d-flex align-items-center">
+                                            <span class="me-2">Otomatik Kahve Değirmeni</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/collections/kettle"
+                                            class="d-flex align-items-center">
+                                            <span class="me-2">Kettle</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/collections/soguk-kahve"
+                                            class="d-flex align-items-center">
+                                            <span class="me-2">Soğuk Demleme</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/collections/cezve"
+                                            class="d-flex align-items-center">
+                                            <span class="me-2">Cezve</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/collections/french-press"
+                                            class="d-flex align-items-center">
+                                            <span class="me-2">French Press</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/collections/kahve-ekipmanlari"
+                                            class="d-flex align-items-center">
+                                            <span class="me-2">Tümü</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex align-items-center">
+                            <span class="me-2">About Us</span>
+                        </a>
+                    </li>
+                    
+                
+                </ul>
+            </div>
+            <div class="mobile-menu-bottom py-20 px-32 mt-auto">
+                <ul class="list-unstyled mb-2">
+                    <li>
+                        <a href="#" class="btn btn-link">
+                            <span class="text-codgray me-2 align-bottom">
+                                <?xml version="1.0" encoding="utf-8"?>
+                                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="6" r="4" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M20 17.5C20 19.9853 20 22 12 22C4 22 4 19.9853 4 17.5C4 15.0147 7.58172 13 12 13C16.4183 13 20 15.0147 20 17.5Z" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </span>
+                            Login
+                        </a>
+                    </li>
+                    <li>
+                        <div class="dropdown dropup effect">
+                            <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown"  data-bs-offset="0,20" data-bs-display="static">
+                              USD $ | Turkey
+                              <svg id="Normal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="icon-caret">
+                                <g id="Chevron" transform="translate(2 5)">
+                                  <path id="Line" d="M0,0,6,6" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+                                  <path id="Line-2" data-name="Line" d="M0,0,6-6" transform="translate(6 6)" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+                                </g>
+                              </svg>
+                              
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropup effect">
+                            <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown"  data-bs-offset="0,20" data-bs-display="static">
+                              English
+                              <svg id="Normal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="icon-caret">
+                                <g id="Chevron" transform="translate(2 5)">
+                                  <path id="Line" d="M0,0,6,6" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+                                  <path id="Line-2" data-name="Line" d="M0,0,6-6" transform="translate(6 6)" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+                                </g>
+                              </svg>
+                              
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">English</a></li>
+                              <li><a class="dropdown-item" href="#">Turkish</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-inline mb-0 social">
+                    <li class="list-inline-item">
+                        <a href="#" class="p-1">
+                            <svg aria-hidden="true" focusable="false" class="icon icon-facebook" viewBox="0 0 18 18">
+                                <path fill="currentColor" d="M16.42.61c.27 0 .5.1.69.28.19.2.28.42.28.7v15.44c0 .27-.1.5-.28.69a.94.94 0 01-.7.28h-4.39v-6.7h2.25l.31-2.65h-2.56v-1.7c0-.4.1-.72.28-.93.18-.2.5-.32 1-.32h1.37V3.35c-.6-.06-1.27-.1-2.01-.1-1.01 0-1.83.3-2.45.9-.62.6-.93 1.44-.93 2.53v1.97H7.04v2.65h2.24V18H.98c-.28 0-.5-.1-.7-.28a.94.94 0 01-.28-.7V1.59c0-.27.1-.5.28-.69a.94.94 0 01.7-.28h15.44z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="p-1">
+                            <svg aria-hidden="true" focusable="false" class="icon icon-instagram" viewBox="0 0 18 18">
+                                <path fill="currentColor" d="M8.77 1.58c2.34 0 2.62.01 3.54.05.86.04 1.32.18 1.63.3.41.17.7.35 1.01.66.3.3.5.6.65 1 .12.32.27.78.3 1.64.05.92.06 1.2.06 3.54s-.01 2.62-.05 3.54a4.79 4.79 0 01-.3 1.63c-.17.41-.35.7-.66 1.01-.3.3-.6.5-1.01.66-.31.12-.77.26-1.63.3-.92.04-1.2.05-3.54.05s-2.62 0-3.55-.05a4.79 4.79 0 01-1.62-.3c-.42-.16-.7-.35-1.01-.66-.31-.3-.5-.6-.66-1a4.87 4.87 0 01-.3-1.64c-.04-.92-.05-1.2-.05-3.54s0-2.62.05-3.54c.04-.86.18-1.32.3-1.63.16-.41.35-.7.66-1.01.3-.3.6-.5 1-.65.32-.12.78-.27 1.63-.3.93-.05 1.2-.06 3.55-.06zm0-1.58C6.39 0 6.09.01 5.15.05c-.93.04-1.57.2-2.13.4-.57.23-1.06.54-1.55 1.02C1 1.96.7 2.45.46 3.02c-.22.56-.37 1.2-.4 2.13C0 6.1 0 6.4 0 8.77s.01 2.68.05 3.61c.04.94.2 1.57.4 2.13.23.58.54 1.07 1.02 1.56.49.48.98.78 1.55 1.01.56.22 1.2.37 2.13.4.94.05 1.24.06 3.62.06 2.39 0 2.68-.01 3.62-.05.93-.04 1.57-.2 2.13-.41a4.27 4.27 0 001.55-1.01c.49-.49.79-.98 1.01-1.56.22-.55.37-1.19.41-2.13.04-.93.05-1.23.05-3.61 0-2.39 0-2.68-.05-3.62a6.47 6.47 0 00-.4-2.13 4.27 4.27 0 00-1.02-1.55A4.35 4.35 0 0014.52.46a6.43 6.43 0 00-2.13-.41A69 69 0 008.77 0z"></path>
+                                <path fill="currentColor" d="M8.8 4a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 7.43a2.92 2.92 0 110-5.85 2.92 2.92 0 010 5.85zM13.43 5a1.05 1.05 0 100-2.1 1.05 1.05 0 000 2.1z">
+                              </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="p-1">
+                            <svg aria-hidden="true" focusable="false" class="icon icon-youtube" viewBox="0 0 100 70">
+                                <path d="M98 11c2 7.7 2 24 2 24s0 16.3-2 24a12.5 12.5 0 01-9 9c-7.7 2-39 2-39 2s-31.3 0-39-2a12.5 12.5 0 01-9-9c-2-7.7-2-24-2-24s0-16.3 2-24c1.2-4.4 4.6-7.8 9-9 7.7-2 39-2 39-2s31.3 0 39 2c4.4 1.2 7.8 4.6 9 9zM40 50l26-15-26-15v30z" fill="currentColor">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <!-- mobile menu end -->
+
+    <!-- cart popup start -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartPopup">
+        <div class="cart-popup-inner h-100 d-flex flex-column">
+            <div class="cart-popup-header d-flex justify-content-between align-items-center p-3 p-lg-4 border-bottom">
+                <h6 class="fs-18 mb-0">Your cart</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="cart-popup-coupon bg-teal collapse show" id="cartCoupon">
+                <div class="text-center text-white py-20 mx-3 mx-lg-4 position-relative">
+                    Save 10% with code <span class="fw-bold">ABC123</span>
+                    <button class="position-absolute end-0 btn p-0 border-0 ms-auto" data-bs-toggle="collapse" data-bs-target="#cartCoupon">
+                        <img src="./snippets/icon-times.svg" alt="...">
+                    </button>
+                </div>
+            </div>
+            <div class="cart-popup-content d-flex flex-column justify-content-between h-100">
+                <div class="position-relative h-100 overflow-y-auto custom-scroll">
+                    <div class="position-absolute top-0 bottom-0 start-0 end-0 px-3 px-lg-30 ">
+                        <div class="cart-popup-item pt-24">
+                            <div class="cart-item-image">
+                                <a href="#">
+                                    <img src="images/cart-image.jpg" alt="..." class="w-100">
+                                </a>
+                            </div>
+                            <div class="cart-item-detail">
+                                <a href="#" class="text-primary fw-semibold fs-14">The Hoxton</a>
+                                <p class="fs-14 text-gray mb-0">Medium, Red</p>
+                            </div>
+                            <div class="cart-item-price">
+                                <ins class="text-decoration-none fw-semibold fs-14">€0.00</ins>
+                            </div>
+                            <div class="cart-item-remove text-primary d-flex align-items-center">
+                                Remove
+                            </div>
+                            <div class="cart-item-quantity">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="quantity d-flex">
+                                        <button class="minus"> - </button>
+                                        <input type="number" class="qty text-center" step="1" min="0" max="9999" value="1">
+                                        <button class="plus"> + </button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="cart-popup-item pt-24">
+                            <div class="cart-item-image">
+                                <a href="#">
+                                    <img src="images/cart-image.jpg" alt="..." class="w-100">
+                                </a>
+                            </div>
+                            <div class="cart-item-detail">
+                                <a href="#" class="text-primary fw-semibold fs-14">The Hoxton</a>
+                                <p class="fs-14 text-gray mb-0">Medium, Red</p>
+                            </div>
+                            <div class="cart-item-price">
+                                <!-- <ins class="text-decoration-none fw-semibold fs-14">€0.00</ins> -->
+                                <div class="spinner-border" role="status"></div>
+                            </div>
+                            <div class="cart-item-remove text-primary d-flex align-items-center">
+                                Remove
+                            </div>
+                            <div class="cart-item-quantity">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="quantity d-flex">
+                                        <button class="minus"> - </button>
+                                        <input type="number" class="qty text-center" step="1" min="0" max="9999" value="1">
+                                        <button class="plus"> + </button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cart-popup-footer p-3 p-lg-30 border-top border-mercury fs-14 text-primary">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="mb-0">Sub-total</p>
+                        <p class="mb-0 fs-18">$600</p>
+                    </div>
+                    <p class="text-dove">Shipping, taxes, and discounts codes calculated at checkout.</p>
+                    <button class="btn btn-yellow rounded-0 w-100 fs-18 fw-medium py-17 rounded-6">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cart popup end -->
+
+     <!-- searchBar  start -->
+     <div class="offcanvas offcanvas-end" tabindex="-1" id="searchBar">
+        <div class="searchBar-inner h-100 d-flex flex-column">
+            <div class="searchBar-header d-flex justify-content-between align-items-center p-3 px-lg-20 border-bottom">
+                <h6 class="fs-18 mb-0">Search</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <form action="/search" method="get" class="p-3 px-lg-20 py-lg-30 border-bottom">
+                <select name="" class="form-select mb-20">
+                    <option value="">All Categories</option>
+                    <option value="">Accessories</option>
+                </select>
+                <div class="position-relative">
+                    <input type="text" class="form-control pe-50">
+                    <button class="btn btn-link position-absolute top-0 end-0 text-accent">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg fill="currentcolor" class="flip-horizontal" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 19 3 C 13.488281 3 9 7.488281 9 13 C 9 15.394531 9.839844 17.589844 11.25 19.3125 L 3.28125 27.28125 L 4.71875 28.71875 L 12.6875 20.75 C 14.410156 22.160156 16.605469 23 19 23 C 24.511719 23 29 18.511719 29 13 C 29 7.488281 24.511719 3 19 3 Z M 19 5 C 23.429688 5 27 8.570313 27 13 C 27 17.429688 23.429688 21 19 21 C 14.570313 21 11 17.429688 11 13 C 11 8.570313 14.570313 5 19 5 Z"/></svg>
+                    </button>
+                </div>
+            </form>
+            <div class="px-3 px-lg-20 py-10 border-bottom fw-semibold fs-14 shadow-lg">
+                Search results
+            </div>
+            <div class="searchBar-content d-flex flex-column justify-content-between h-100">
+                <div class="position-relative h-100 overflow-y-auto custom-scroll">
+                    <div class="position-absolute top-0 bottom-0 start-0 end-0 p-3 p-lg-20">
+                        <div class="search-result-item row mb-20">
+                            <div class="col-3 text-center">
+                                <a href="#">
+                                    <img src="./images/cart-image.jpg" alt="..." class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-8">
+                                <a href="#" class="text-primary fw-semibold fs-14">The Hoxton</a>
+                                <p class="fs-14 text-gray mb-0">Medium, Red</p>
+                                <ins class="text-decoration-none fw-semibold fs-14">€0.00</ins>
+                            </div>
+                        </div>
+                        <div class="search-result-item row mb-20">
+                            <div class="col-3 text-center">
+                                <a href="#">
+                                    <img src="./images/cart-image.jpg" alt="..." class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="col-8">
+                                <a href="#" class="text-primary fw-semibold fs-14">The Hoxton</a>
+                                <p class="fs-14 text-gray mb-0">Medium, Red</p>
+                                <ins class="text-decoration-none fw-semibold fs-14">€0.00</ins>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-link fs-14 fw-semibold">
+                            View All
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg fill="#000000" width="18px" height="18px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 21.1875 9.28125 L 19.78125 10.71875 L 24.0625 15 L 4 15 L 4 17 L 24.0625 17 L 19.78125 21.28125 L 21.1875 22.71875 L 27.90625 16 Z"/></svg>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- searchBar end -->
+
+    <!-- announcement start -->
+    <section class="announcement bg-accent collapse show position-relative" id="announcement-bar">
+        <div class="container text-white text-center py-16 position-relative d-flex justify-content-center">
+            <div class="announcement-inner mx-auto">
+                Free shipping for all orders until June 2019. Use code <span class="fw-bold">ABC123</span> in checkout.
+            </div>
+            <button class="close-announcement position-lg-absolute end-0 btn p-0 border-0 ms-auto"
+                data-bs-toggle="collapse" data-bs-target="#announcement-bar">
+                <img src="./snippets/icon-times.svg" alt="...">
+            </button>
+
+        </div>
+    </section>
+    <!-- announcement end -->
+
+    <!-- header start -->
+    <header class="header sticky-top bg-white shadow-nav">
+        <div class="container py-2 py-lg-3">
+            <div class="row gx-0 align-items-center">
+                <div class="col col-lg-5">
+                    <button class="btn btn-link menu-button d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"><span class="burger-icon"></span></button>
+                    <ul class="nav d-none d-lg-flex">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Shop</a>
+                            <ul class="dropdown-menu py-16">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-lg-2 text-center">
+                    <a href="/" class="logo">
+                        <img src="./assets/logo.svg" alt="...">
+                    </a>
+                </div>
+                <div class="col col-lg-5">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="offcanvas" href="#searchBar">
+                                <span class="text-accent">
+                                    <?xml version="1.0" encoding="utf-8"?>
+                                    <svg fill="currentColor" class="flip-horizontal" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 19 3 C 13.488281 3 9 7.488281 9 13 C 9 15.394531 9.839844 17.589844 11.25 19.3125 L 3.28125 27.28125 L 4.71875 28.71875 L 12.6875 20.75 C 14.410156 22.160156 16.605469 23 19 23 C 24.511719 23 29 18.511719 29 13 C 29 7.488281 24.511719 3 19 3 Z M 19 5 C 23.429688 5 27 8.570313 27 13 C 27 17.429688 23.429688 21 19 21 C 14.570313 21 11 17.429688 11 13 C 11 8.570313 14.570313 5 19 5 Z"/></svg>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#">
+                                <span>Log in</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link push-cart" data-bs-toggle="offcanvas" href="#cartPopup">
+                                <div class="position-relative d-flex align-items-center">
+                                    <span class="d-none d-lg-block">Cart</span>
+                                    <span class="d-lg-none text-accent">
+                                        <?xml version="1.0" encoding="utf-8"?>
+                                        <svg fill="currentColor" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M 16 3 C 13.253906 3 11 5.253906 11 8 L 11 9 L 6.0625 9 L 6 9.9375 L 5 27.9375 L 4.9375 29 L 27.0625 29 L 27 27.9375 L 26 9.9375 L 25.9375 9 L 21 9 L 21 8 C 21 5.253906 18.746094 3 16 3 Z M 16 5 C 17.65625 5 19 6.34375 19 8 L 19 9 L 13 9 L 13 8 C 13 6.34375 14.34375 5 16 5 Z M 7.9375 11 L 11 11 L 11 14 L 13 14 L 13 11 L 19 11 L 19 14 L 21 14 L 21 11 L 24.0625 11 L 24.9375 27 L 7.0625 27 Z"/></svg>
+                                    </span>
+                                    <span class="cart-count">1</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <!-- header end -->
+
+    <main>
+        <section class="register">
+            <div class="container pt-5 pt-lg-100">
+                <div class="row justify-content-center">
+                    <div class="col-xl-9">
+                        <div class="shadow-acc rounded-3 overflow-hidden">
+                            <div class="row">
+                                <div class="col-lg-6 px-40 pt-50 pb-34 text-center d-flex flex-column">
+                                    <h6 class="h2 text-accent mb-4 mb-lg-45">Create new account</h6>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control py-15" placeholder="Email">
+                                    </div>
+                                    <div class="mb-32">
+                                        <input type="text" class="form-control py-15" placeholder="Password">
+                                    </div>
+                                    <button class="btn btn-yellow fs-18 fw-medium rounded-6 text-primary py-2 py-lg-17 px-lg-77 w-100 mb-27">Create account</button>
+                                    <p class="fs-14 text-primary">Already have an account? <a class="text-teal" href="#">Log in</a></p>
+                                    
+                                    <hr class="text-alto opacity-50 mt-auto">
+
+                                    <p class="fs-14 text-primary">By signing up you agree to the <a class="text-teal" href="#">Terms of Use</a> and <a class="text-teal" href="#">Privacy Policy</a></p>
+
+                                </div>
+                                <div class="col-lg-6 d-none d-lg-block">
+                                    <img src="./assets/register-bg.jpg" class="w-100 h-100 object-fit-cover">
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer start -->
+    <footer class="footer pt-50 pt-lg-100 text-white">
+        <div class="bg-accent py-43">
+            <div class="container">
+                <div class="row mb-40">
+                    <div class="col-12">
+                        <a href="/"><img src="./assets/logo-light.svg" alt="..."></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mb-4 mb-lg-0">
+
+                        <div class="row row-gap-10" id="footerLinklist">
+                            <div class="col-lg-4">
+                                <h6 class="fs-18 mb-21 d-flex align-items-center justify-content-between pe-lg-none" data-bs-toggle="collapse" data-bs-target="#linklist1" role="button">
+                                    Shop
+                                    <span class="right-arrow d-lg-none"><img src="./snippets/icon-angle-down.svg" alt="..."></span>
+                                </h6>
+                                <div class="collapse d-lg-block" id="linklist1" data-bs-parent="#footerLinklist">
+                                    <ul class="list-unstyled footer-menu">
+                                        <li class="mb-13"><a href="#">Coffee cups</a></li>
+                                        <li class="mb-13"><a href="#">Tea cups</a></li>
+                                        <li class="mb-13"><a href="#">Plates</a></li>
+                                        <li><a href="#">Bowls</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <h6 class="fs-18 mb-21 d-flex align-items-center justify-content-between pe-lg-none" data-bs-toggle="collapse" data-bs-target="#linklist2" role="button">
+                                    Info
+                                    <span class="right-arrow d-lg-none"><img src="./snippets/icon-angle-down.svg" alt="..."></span>
+                                </h6>
+                                <div class="collapse d-lg-block" id="linklist2" data-bs-parent="#footerLinklist">
+                                    <ul class="list-unstyled footer-menu">
+                                        <li class="mb-13"><a href="#">Contact Us</a></li>
+                                        <li class="mb-13"><a href="#">Privacy</a></li>
+                                        <li class="mb-13"><a href="#">Shipping & Returns</a></li>
+                                        <li><a href="#">Payments</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <h6 class="fs-18 mb-21 d-flex align-items-center justify-content-between pe-lg-none" data-bs-toggle="collapse" data-bs-target="#linklist3" role="button">
+                                    Social
+                                    <span class="right-arrow d-lg-none"><img src="./snippets/icon-angle-down.svg" alt="..."></span>
+                                </h6>
+                                <div class="collapse d-lg-block" id="linklist3" data-bs-parent="#footerLinklist">
+                                    <ul class="list-unstyled footer-menu">
+                                        <li class="mb-13"><a href="#">Instagram</a></li>
+                                        <li class="mb-13"><a href="#">Facebook</a></li>
+                                        <li class="mb-13"><a href="#">Twitter</a></li>
+                                        <li><a href="#">Pinterest</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <h6 class="fs-18 mb-21">Keep in touch</h6>
+                        <p class="mb-18">Subscribe to our newsletter and get 10% off your first order</p>
+                        <div class="d-flex bg-white rounded-1">
+                            <input type="text" class="form-control rounded-0 bg-transparent border-0 py-3" placeholder="Email">
+                            <button class="btn btn-transparent px-3">
+                                <svg id="Normal" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <g id="Chevron" transform="translate(6 2)">
+                                      <path id="Line" d="M0,0,6,6" transform="translate(0 12) rotate(-90)" fill="none" stroke="#040e3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+                                      <path id="Line-2" data-name="Line" d="M0,0,6-6" transform="translate(6 6) rotate(-90)" fill="none" stroke="#040e3f" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-rhino text-center py-15">
+            <p class="mb-0 fs-14">Copyright © 2019 Your Brand.</p>
+        </div>
+    </footer>
+
+    
+   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
+    <script src="./assets/bootstrap.bundle.min.js" defer></script>
+    <!-- lazysizes -->
+    <script src="./assets/lazysizes.min.js"></script>
+    <script src="./assets/ls.unveilhooks.js"></script>
+    <!-- swiper -->
+    <script src="./assets/swiper-bundle.min.js"></script>
+    <!-- nice-select2 -->
+    <script src="./assets/nice-select2.js"></script>
+    <!-- fancybox -->
+    <script src="./assets/fancybox.umd.js"></script>
+
+    <script src="./assets/main.js" ></script>
+</body>
+
+</html>
